@@ -1,7 +1,5 @@
-# MoodMate
+# MoodMate 🎧🎬💬
 A mood-enhancing AI companion website with music, videos and adaptive background.
-
-MoodMate 🎧🎬💬
 
 # MoodMate is a mood-based AI assistant website that:
 - Suggests Spotify music and YouTube videos based on mood 🎶📺
