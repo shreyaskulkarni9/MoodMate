@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodMate - Your AI Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-heart"></i>
+                <span>MoodMate</span>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#moods" class="nav-link">Moods</a>
+                <a href="#music" class="nav-link">Music</a>
+                <a href="#videos" class="nav-link">Videos</a>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">Your Personal AI Mood Companion</h1>
+                    <p class="hero-subtitle">Let me understand your mood and suggest the perfect music and videos for you</p>
+                    
+                    <!-- Voice Assistant -->
+                    <div class="voice-assistant">
+                        <button id="voiceBtn" class="voice-btn">
+                            <i class="fas fa-microphone"></i>
+                            <span class="voice-status">Click to speak</span>
+                        </button>
+                        <div id="voiceText" class="voice-text"></div>
+                    </div>
+
+                    <!-- AI Response -->
+                    <div id="aiResponse" class="ai-response">
+                        <div class="ai-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="ai-message">
+                            <p>Hello! I'm your MoodMate. Tell me how you're feeling today, and I'll help you find the perfect content to match your mood.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mood Selection -->
+            <section id="moods" class="mood-section">
+                <h2 class="section-title">How are you feeling?</h2>
+                <div class="mood-grid">
+                    <button class="mood-card" data-mood="happy">
+                        <i class="fas fa-smile"></i>
+                        <span>Happy</span>
+                    </button>
+                    <button class="mood-card" data-mood="sad">
+                        <i class="fas fa-sad-tear"></i>
+                        <span>Sad</span>
+                    </button>
+                    <button class="mood-card" data-mood="energetic">
+                        <i class="fas fa-bolt"></i>
+                        <span>Energetic</span>
+                    </button>
+                    <button class="mood-card" data-mood="calm">
+                        <i class="fas fa-leaf"></i>
+                        <span>Calm</span>
+                    </button>
+                    <button class="mood-card" data-mood="romantic">
+                        <i class="fas fa-heart"></i>
+                        <span>Romantic</span>
+                    </button>
+                    <button class="mood-card" data-mood="motivated">
+                        <i class="fas fa-fire"></i>
+                        <span>Motivated</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Music Suggestions -->
+            <section id="music" class="suggestions-section">
+                <h2 class="section-title">
+                    <i class="fab fa-spotify"></i>
+                    Music for your mood
+                </h2>
+                <div id="musicSuggestions" class="suggestions-grid">
+                    <!-- Music suggestions will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Video Suggestions -->
+            <section id="videos" class="suggestions-section">
+                <h2 class="section-title">
+                    <i class="fab fa-youtube"></i>
+                    Videos for your mood
+                </h2>
+                <div id="videoSuggestions" class="suggestions-grid">
+                    <!-- Video suggestions will be populated by JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 MoodMate. Your personal AI companion.</p>
+        </footer>
+    </div>
+
+    <!-- Audio for voice feedback -->
+    <audio id="notificationSound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmAZBT2U2/LHdiMFl" type="audio/wav">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
