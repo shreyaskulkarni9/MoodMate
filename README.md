@@ -22,9 +22,9 @@ MoodMate 🎧🎬💬
 
 # Contributors
 All members contributed equally to this project 
-Shreyas Kulkarni [ https://github.com/shreyaskulkarni9 ]
-Tanishq Goyal [ https://github.com/TanishqGoyal05 ]
-Vansh Aggarwal [ https://github.com/VanshAggarwal24 ]
+- Shreyas Kulkarni [ https://github.com/shreyaskulkarni9 ]
+- Tanishq Goyal [ https://github.com/TanishqGoyal05 ]
+- Vansh Aggarwal [ https://github.com/VanshAggarwal24 ]
 
 # PPT
 - Link [ https://docs.google.com/presentation/d/1VxEZdRL_VCo-_fEoYPrYx9QydoWS9-74/edit?usp=sharing&ouid=101252160620638432122&rtpof=true&sd=true ]
